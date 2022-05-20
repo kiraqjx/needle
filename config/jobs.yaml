@@ -1,0 +1,11 @@
+jobs:
+  - name: 'test'
+    target: 'www.baidu.com'
+    interval: 3
+    probe-type: 'ping'
+    job-type: 'cmd'
+    success-init: 'echo hello'
+    error-init: 'echo hello'
+    success-to-error: 'echo hello'
+    error-to-success: 'echo hello'
+    
